@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url('./assets/bg-x-white.svg');
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+
+}
+
+section{
+    /* min-height: 100vh;  */
+}
+.vh-80{
+height: 80vh;
+}
+  
+nav{
+    background-color: #140f1c76!important;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    z-index: 100;
+    transition: transform .3s ease-in-out;
+    top: 0;
+}
+.logo{
+    position: relative;
+    width: 150px;
+}
+.splide__slide{
+    height: 80vh;
+}
+.slide__overlay{
+    background-image: linear-gradient(#00000000 0%, #000000b5 90%);
+    position: absolute;
+    inset: 0 0 0 0;
+    z-index: 2;
+    height: 100%;
+}
+.slide__overlay .name-place{
+position: absolute;
+bottom: 0;
+left: 0;
+}
+.splide__slide img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+box-icon{
+    cursor: pointer;
+    display: block;
+
+}
+
+.blurry-gradient-haikei-blue{
+    background-image: url('./assets/blurry-gradient-haikei.svg');
+}
+.bg-x-white{
+
+}
+@media (max-width: 570px) {
+    .splide__arrows{
+        display: none;
+    }
+}
+.masonry-container{
+    columns: 4;
+    gap: 15px;
+}
+.masonry-container img{
+    max-width: 100%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+@media (max-width: 992px){
+    .masonry-container{
+        columns: 3;
+    }
+}
+@media (max-width: 768px){
+    .masonry-container{
+        columns: 2;
+    }
+}
+.hero-nosotros{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url('./assets/heros/nosotros.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.hero-rodadora{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url('./assets/heros/la-rodadora.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.atraccionesHero{
+    background-position: center;
+    background-size: cover;
+}
+/* .BotonAccesibilidad {
+
+    font-family: monospace;
+    background-color: transparent;
+    color: #3b82f6;
+    border: none;
+    border-radius: 50%;
+    padding: 2px 2px;
+    transition: .3s;
+    position: fixed;
+    bottom: 10px;
+    height:min-content ;    
+    right: 10px;
+    margin: auto;
+  }
+  .BotonAccesibilidad img{
+
+    height: 60px;
+
+  }
+  .BotonAccesibilidad:hover {
+    background-color: #709be5;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+  } */
+
+  .ContenedorBoton{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    margin: auto;
+  }
+
+  /* Cool share button made by: csozi | Website: english.csozi.hu*/
+
+.buttons {
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: fit-content;
+    width: fit-content;
+    transition-duration:50ms;
+    border-radius: 50%;
+  }
+
+  
+  .buttons:hover .button {
+    box-shadow: 1px 1px 5px #cacaca, -1px -1px 5px #ffffff;
+    transition-duration: 50ms;
+  }
+  
+  .main-button {
+    position: relative;
+    display: grid;
+    place-items: center;
+    padding: 0px;
+    border: none;
+    background: #e8e8e8;
+box-shadow: 1px 1px 5px #cacaca, -1px -1px 5px #ffffff;
+    border-radius: 50%;
+    transition-duration:50ms;
+    z-index: 100;
+
+  }
+  
+  .button {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    border: none;
+    background: #def4ff;
+    box-shadow: 5px 5px 12px rgba(202, 202, 202, 0), -5px -5px 12px rgba(255, 255, 255, 0);
+    transition-duration:50ms;
+    border-radius: 50%;
+  }
+    
+  .pinterest-button:hover {
+    background: #7dd4ff;
+  }
+  
+  .buttons:hover .pinterest-button {
+    translate: 0px -55px;
+    box-shadow: 1px 1px 5px #cacaca, -1px -1px 5px #ffffff;
+    transition-duration: 50ms;
+  }
+  
+  .instagram-button:hover {
+    background: #7dd4ff;
+  }
+  
+  .buttons:hover .instagram-button {
+
+    translate: 0px -110px;
+    box-shadow: 1px 1px 5px #cacaca, -1px -1px 5px #ffffff;
+    transition-duration: 50ms;
+  }
+  
+  .snapchat-button:hover {
+    background: #7dd4ff;
+    width: 45px;
+  }
+  
+  .buttons:hover .snapchat-button {
+    translate: 0px -165px;
+    box-shadow: 1px 1px 5px #cacaca, -1px -1px 5px #ffffff;
+    transition-duration: 50ms;
+  }
+
+  .contrast-high {
+    background-color: #000;
+    color: #fff;
+    filter: invert();
+    /* Agregar otros estilos para aumentar el contraste */
+  }
+
+
